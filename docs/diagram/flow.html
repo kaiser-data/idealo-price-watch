@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Price Watch flow</title>
+<!-- Source of docs/img/flow.png. Re-render: headless Chrome, window 1200x340, device scale 2. -->
+<style>
+  :root { --ink:#141b2d; --muted:#5d6475; --line:#e2ddd1; --bg:#f4f1ea; --card:#fffdf8; --accent:#e89a00; --buy:#12805c; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); font:15px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif; color:var(--ink); }
+  .wrap { width:1200px; height:340px; padding:36px 40px; display:flex; flex-direction:column; gap:26px; }
+  h1 { margin:0; font-size:20px; letter-spacing:-.01em; }
+  h1 span { color:var(--muted); font-weight:400; }
+  .row { display:flex; align-items:stretch; gap:0; }
+  .step { flex:1; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 16px 14px; box-shadow:0 1px 2px rgba(20,27,45,.06),0 8px 22px -14px rgba(20,27,45,.25); }
+  .n { display:inline-grid; place-items:center; width:24px; height:24px; border-radius:50%; background:var(--ink); color:#fff; font-size:12px; font-weight:700; margin-bottom:8px; }
+  .who { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); }
+  .what { font-size:16px; font-weight:700; margin:2px 0 6px; }
+  .ex { font-size:13px; color:var(--muted); }
+  code { font:12.5px ui-monospace,Menlo,monospace; background:var(--bg); border:1px solid var(--line); border-radius:5px; padding:0 4px; color:var(--ink); }
+  .arrow { width:34px; display:grid; place-items:center; color:var(--accent); font-size:22px; font-weight:700; }
+  .verdicts { display:flex; gap:8px; margin-top:8px; flex-wrap:wrap; }
+  .pill { font-size:12px; font-weight:700; padding:4px 10px; border-radius:999px; }
+  .buy { color:var(--buy); background:#dcf3e8; } .deal { color:#1f5fbf; background:#e1ebfb; } .wait { color:#9a5b00; background:#fbebd0; }
+  .note { display:flex; gap:22px; font-size:13px; color:var(--muted); }
+  .note b { color:var(--ink); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Price Watch <span>— from “I want this” to “buy it now” in four steps</span></h1>
+  <div class="row">
+    <div class="step"><div class="n">1</div><div class="who">You · in the app</div><div class="what">Add a product</div><div class="ex">“AirPods Pro 3”, target <b>175 €</b>, market DE</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">2</div><div class="who">Claude Code</div><div class="what">Run <code>/price-check</code></div><div class="ex">Finds it on idealo, pulls 30-day history + best shops through the idealo MCP</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">3</div><div class="who">npm run ingest</div><div class="what">Judge the price</div><div class="ex">Today 169,99 € vs low 163,99 €, avg 194,88 €, your target 175 €</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="n">4</div><div class="who">Dashboard</div><div class="what">Get a verdict</div><div class="verdicts"><span class="pill buy">Buy now</span><span class="pill deal">Good deal</span><span class="pill wait">Wait</span></div><div class="ex" style="margin-top:8px">plus chart, 30-day range and cheapest shop incl. shipping</div></div>
+  </div>
+  <div class="note"><span><b>Why Claude fetches:</b> the idealo MCP needs an OAuth login that Claude Code already has.</span><span><b>Where data lives:</b> <code>data/</code> on your machine, never in git.</span></div>
+</div>
+</body>
+</html>
