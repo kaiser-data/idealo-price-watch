@@ -1,0 +1,52 @@
+{
+ "offers": [
+  {
+   "price": "439,99 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "smartport.de (Marktplatzhändler)",
+    "rating": {
+     "avg": null,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "Sa. 05.12.–Di. 08.12.2026"
+   },
+   "freeReturnDays": null,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=f38fb1d5dbab94aa6536cb85de8c1168&type=offer&media=ipc-public-mcp"
+  },
+  {
+   "price": "449,00 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "galaxus.de",
+    "rating": {
+     "avg": 4.63,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "Mo. 30.11.–Di. 01.12.2026"
+   },
+   "freeReturnDays": 30,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=e79d590504c6a5af4ee3de154bc3331d&type=offer&media=ipc-public-mcp"
+  },
+  {
+   "price": "469,00 €",
+   "minShippingCost": "8,99 €",
+   "shop": {
+    "name": "notebooksbilliger.de",
+    "rating": {
+     "avg": 2.07,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "Mo. 30.11.–Di. 01.12.2026"
+   },
+   "freeReturnDays": 30,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=21769a58956fddd2bc01b639cb6564f1&type=offer&media=ipc-public-mcp"
+  }
+ ]
+}

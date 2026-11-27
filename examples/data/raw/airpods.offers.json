@@ -1,0 +1,36 @@
+{
+ "offers": [
+  {
+   "price": "179,00 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "mediamarkt.de",
+    "rating": {
+     "avg": 3.85,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "bis Di. 01.12.2026"
+   },
+   "freeReturnDays": 30,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=456ee69e1ae4d645939c9a67311fdcd6&type=offer&media=ipc-public-mcp"
+  },
+  {
+   "price": "179,00 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "saturn.de",
+    "rating": {
+     "avg": 3.64,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "bis Di. 01.12.2026"
+   },
+   "freeReturnDays": 30,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=9a6a268bbd2d3c783bb4718a2b743c16&type=offer&media=ipc-public-mcp"
+  }
+ ]
+}

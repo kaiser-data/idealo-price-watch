@@ -1,0 +1,52 @@
+{
+ "offers": [
+  {
+   "price": "209,00 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "mediamarkt.de (Marktplatzhändler)",
+    "rating": {
+     "avg": null,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "Do. 03.12.–Sa. 05.12.2026"
+   },
+   "freeReturnDays": null,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=61d8991695f5d204dcfd93e0a2494cbf&type=offer&media=ipc-public-mcp"
+  },
+  {
+   "price": "209,00 €",
+   "minShippingCost": "0,00 €",
+   "shop": {
+    "name": "saturn.de (Marktplatzhändler)",
+    "rating": {
+     "avg": null,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "Do. 03.12.–Sa. 05.12.2026"
+   },
+   "freeReturnDays": null,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=b36df486818f1b61cec2e2c5f1903b55&type=offer&media=ipc-public-mcp"
+  },
+  {
+   "price": "224,22 €",
+   "minShippingCost": "5,99 €",
+   "shop": {
+    "name": "office-partner.de",
+    "rating": {
+     "avg": 4.38,
+     "count": null
+    }
+   },
+   "delivery": {
+    "deliveryText": "bis Di. 01.12.2026"
+   },
+   "freeReturnDays": 30,
+   "relocatorUrl": "https://www.idealo.de/relocator/relocate?offerKey=216adfce2d13a79601573a56197173cd&type=offer&media=ipc-public-mcp"
+  }
+ ]
+}

@@ -1,0 +1,6 @@
+# Personal watchlist and fetched prices stay local
+/data/
+node_modules/
+*.tmp
+.DS_Store
+.claude/settings.local.json

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "id": "sony",
+      "query": "Sony WH-1000XM5 black",
+      "name": "Sony WH-1000XM5",
+      "variant": "Black",
+      "country": "DE",
+      "productRef": "pr.v1.k1.jJD77hE9pAl2cK5xNaQqF_asOB4bHS7b7sHvhxsh8jxlr1Jp1A",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/201952086_-wh-1000xm5-black-sony.html",
+      "imageUrl": "https://cdn.idealo.com/folder/Product/201952/0/201952086/s1_produktbild_mobil/sony-wh-1000xm5-black.jpg",
+      "targetPrice": 190,
+      "addedAt": "2026-11-27T19:00:00.000Z"
+    },
+    {
+      "id": "airpods",
+      "query": "Apple AirPods Pro 3",
+      "name": "Apple AirPods Pro 3",
+      "variant": null,
+      "country": "DE",
+      "productRef": "pr.v1.k1._-xvFP8H-O4Fdh4Wq7DKyZYgN0mX1L72uinxNGNAF-3Y8S8kGQ",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/207671730_-airpods-pro-3-apple.html",
+      "imageUrl": "https://cdn.idealo.com/folder/Product/207671/7/207671730/s1_produktbild_mobil/apple-airpods-pro-3.jpg",
+      "targetPrice": 175,
+      "addedAt": "2026-11-27T19:00:00.000Z"
+    },
+    {
+      "id": "switch2",
+      "query": "Nintendo Switch 2",
+      "name": "Nintendo Switch 2",
+      "variant": "schwarz",
+      "country": "DE",
+      "productRef": "pr.v1.k1.Vrqzxvmz7TndvwLzLV49ZOcchsok_Bvr3TxGxcoLNNKreQMU_Q",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/206193299_-switch-2-schwarz-nintendo.html",
+      "imageUrl": "https://cdn.idealo.com/folder/Product/206193/2/206193299/s1_produktbild_mobil/nintendo-switch-2-schwarz.jpg",
+      "targetPrice": null,
+      "addedAt": "2026-11-27T19:00:00.000Z"
+    }
+  ]
+}

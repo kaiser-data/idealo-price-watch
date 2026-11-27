@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Price Watch</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23121a2b'/%3E%3Cpath d='M6 21l6-6 5 4 9-9' stroke='%23ffb020' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <div class="brand">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8"/><path d="M6 21l6-6 5 4 9-9"/></svg>
+        <div>
+          <h1>Price Watch</h1>
+          <p class="sub">Buy now or wait — 30-day idealo prices</p>
+        </div>
+      </div>
+      <p class="updated" id="updated"></p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="summary" id="summary" aria-label="Summary"></section>
+
+    <form class="add" id="add-form" autocomplete="off">
+      <label class="field grow">
+        <span>Product</span>
+        <input name="query" placeholder="e.g. Sony WH-1000XM6 silver" required maxlength="200">
+      </label>
+      <label class="field">
+        <span>Target €</span>
+        <input name="targetPrice" inputmode="decimal" placeholder="optional">
+      </label>
+      <label class="field">
+        <span>Market</span>
+        <select name="country">
+          <option>DE</option><option>AT</option><option>FR</option><option>IT</option><option>ES</option><option value="GB">UK</option>
+        </select>
+      </label>
+      <button type="submit">Watch</button>
+    </form>
+    <p class="hint">New products show as <em>pending</em> until you run <code>/price-check</code> in Claude Code — it finds them on idealo and pulls fresh prices.</p>
+
+    <div class="filters" role="tablist" id="filters">
+      <button role="tab" data-filter="all" aria-selected="true">All</button>
+      <button role="tab" data-filter="buy">Buy now</button>
+      <button role="tab" data-filter="wait">Wait</button>
+    </div>
+
+    <section class="grid" id="grid" aria-live="polite"></section>
+  </main>
+
+  <footer class="wrap foot">Prices from idealo via the idealo MCP · fetched by Claude Code · data stays on this machine</footer>
+
+  <template id="card-tpl">
+    <article class="card">
+      <div class="card-head">
+        <div class="thumb"><img alt="" loading="lazy"></div>
+        <div class="title">
+          <h2></h2>
+          <p class="variant"></p>
+          <p class="meta"></p>
+        </div>
+        <button class="icon remove" title="Stop watching" aria-label="Stop watching">×</button>
+      </div>
+      <div class="price-row">
+        <div>
+          <div class="price"></div>
+          <div class="delta"></div>
+        </div>
+        <span class="pill"></span>
+      </div>
+      <p class="reason"></p>
+      <div class="chart"></div>
+      <div class="range">
+        <div class="range-bar"><span class="range-dot"></span></div>
+        <div class="range-labels"><span class="lo"></span><span class="mid"></span><span class="hi"></span></div>
+      </div>
+      <div class="card-foot">
+        <label class="target">Target € <input inputmode="decimal" placeholder="—"></label>
+        <a class="shop" target="_blank" rel="noopener noreferrer"></a>
+      </div>
+    </article>
+  </template>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
